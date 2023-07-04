@@ -188,7 +188,7 @@ nav{
     text-align: center;
     align-items: center;
     justify-content: center;
-    
+    align-self:center;
 }
 
 .feedback__div{

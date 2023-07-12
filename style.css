@@ -1,4 +1,6 @@
-
+html{
+    scroll-behavior: smooth;
+}
 * {
     margin: 0;
     padding: 0;
@@ -45,7 +47,7 @@ body{
 }
 nav,header{
     display: flex;
-    min-width: 1424px;
+    max-width: 1424px;
 
 }
 .hero-li{
@@ -80,12 +82,17 @@ nav,header{
 .main{
     display: flex;
     height: 700px;
-    min-width: 1328px;
+    max-width: 1328px;
     background-image: url("./images/Rectangffffffffffle.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     justify-content: flex-end;
     align-items: flex-end;
+
+    @media screen and (max-width:768px){
+        max-width: 710px; 
+    }
+
 }
 
 .main__button{
@@ -114,28 +121,14 @@ nav,header{
 }
 
 .container{
-    min-width: 1440px;
+    max-width: 1440px;
     margin: 0px;
     padding: 0;
+
 }
 
 
 
-
-.container {
-    
-    @media (max-width: 767px) { }
-
-    @media (min-width: 768px) and (max-width: 991px) { }
-
-    @media (min-width: 991px) and (max-width: 1199px) { }
-
-    @media (min-width: 1200px) and (max-width:1440px) { }
-
-    @media screen and (min-width: 320px) {
-    margin: 25px;
-}
-}
 .main__text{
     color: #56593D;
     max-width: 179px;
@@ -149,10 +142,12 @@ nav,header{
     color: #56593D;
     font-size: 40px;
     font-style: Regular;
+    text-wrap: balance;
     font-family: "Roboto", sans-serif;
 }
 
 .feedback{
+    margin: 55px;
     display: flex;
     justify-content: space-around;
     text-align: center;
@@ -217,28 +212,35 @@ p,h1,h2,h3,h4,h5,h6,a{
     margin-top: 155px;
     max-width: 1360px;
     height: 738px;
-    display: flex;
-    align-items: center;
     text-align: center;
-    justify-content: space-around;
+    align-content: center;
 }
+
 .mapple__text__main{
     height: 33px;
-    max-width: 254px;
+    min-width: 254px;
     font-size: 24px;
+    margin: 0 auto;
 }
 
 .mapple__text{
-    align-content: center;
-    justify-self: flex-end;
     align-self: flex-start;
-    
 }
 
-.text__short,.text__long,.text__wide{
+.mapple__board__main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 92px;
+}
+
+.text__short .text__long .text__wide{
+    display: flex;
+    align-self:flex-end;
     font-size: 16px;
     max-width: 144px;
     height: 22px;
+
 }
 
 .link__short,.link__long,.link__wide{
@@ -257,8 +259,73 @@ p,h1,h2,h3,h4,h5,h6,a{
     min-width: 411px;
 }
 
-
-.div__short,.div__long,.div__wide{
+.plates{
+    height: 700px;
+    max-width: 1328px;
+    border-color: #FFFFEF;
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    align-self: flex-end;
+    background-image: url("./images/Rectangleplates.jpg");
+    padding-top: 62px;
+    margin-bottom: 24px;
 }
+
+
+.plates__text{
+    height: 22px;
+    max-width: 159px;
+    font-size: 17px;
+}
+
+.plate__h2{
+    height: 121px;
+    max-width: 1093px;
+    font-size: 50px;
+    font-weight: 500;
+    
+}
+.story {
+    margin: 24px;
+    height: 746px;
+    max-width: 1360px;
+    display: flex;
+    background-color: #FFFFEF;
+    align-items: center;
+    
+}
+
+.story__text {
+    height: 227px;
+    width: 347px;
+    font-size: 20px;
+}
+
+.story__img {
+    height: 618px;
+    width: 743px;
+}
+
+.story__h2 {
+    height: 39px;
+    width: 219px;
+    font-size: 29px;
+    font-weight: 500;
+    
+}
+.story__h2:after {
+    content: "";
+    display: inline-block;
+    width: 40px;
+    height: 2px;
+    background-color: #717353;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+.story__div {
+    justify-content: space-around;
+    flex-direction: column;
+    margin-left: 200px; 
+}
+

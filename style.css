@@ -311,7 +311,7 @@ p,h1,h2,h3,h4,h5,h6,a{
     width: 219px;
     font-size: 29px;
     font-weight: 500;
-    
+
 }
 .story__h2:after {
     content: "";
@@ -322,6 +322,7 @@ p,h1,h2,h3,h4,h5,h6,a{
     margin-left: 20px;
     margin-bottom: 10px;
 }
+
 
 .story__div {
     justify-content: space-around;
